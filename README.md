@@ -15,4 +15,4 @@ To run the project, use following command `npm start`.
 It runs the app in the development mode.
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-To access the app, follow this [link](https://vercel.com/shrynshigupts06/user-details-react).
+To access the app, follow this [link](https://user-details-react.vercel.app/).

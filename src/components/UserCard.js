@@ -1,11 +1,10 @@
 import { useState } from 'react';
 import { EditOutlined, HeartFilled, HeartOutlined, DeleteFilled, MailOutlined, PhoneOutlined, GlobalOutlined } from '@ant-design/icons';
 import { Card } from 'antd';
-const { Meta } = Card;
 
 import EditUserModal from './EditUserModal';
 import './UserCard.css';
-
+const { Meta } = Card;
 
 const UsersCard = (props) => {
 

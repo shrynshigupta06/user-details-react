@@ -1,0 +1,44 @@
+.user-card {
+    margin: 15px;
+    line-height: 2;
+}
+
+.ant-card-cover {
+    height: 200px;
+}
+
+.ant-card-cover img {
+    height: 100%;
+    background-color: #f5f5f5;
+}
+
+.ant-card .ant-card-meta-title {
+    margin-bottom: 4px;
+}
+
+.ant-card .ant-card-meta-description {
+    color: #000000A6;
+}
+
+.ant-card-meta {
+    line-height: 2.1;
+}
+
+.card-icons {
+    font-size: 18px;
+    color: #000000A6;
+}
+
+.wishlist-action {
+    color: red;
+}
+
+.ant-card-actions svg{
+    font-size: 20px;
+}
+
+.ant-card .ant-card-actions {
+    background: #fafafa;
+    border-top: 1px solid #e8e8e8;
+    zoom: 1
+}

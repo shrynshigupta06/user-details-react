@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
+import { Col, Row } from 'antd';
 
 import UsersCard from "./UserCard";
 import LoadingSpinner from "./LoadingSpinner";
 import { getUsers } from "../data";
-import './UsersList.css';
 
 
 const UsersList = () => {
@@ -17,13 +17,17 @@ const UsersList = () => {
     }, []);
 
     return (
-        <div className="user-card-list">
-            {userList.length ?
-                userList.map((user, idx) => <UsersCard key={idx} index={idx} userData={user} userList={userList} setUserList={setUserList}/>)
+        <Row>
+            {userList.length ? 
+                userList.map((user, idx) =>
+                    <Col xs={24} sm={24} md={8} lg={8} xl={6} key={idx}>
+                        <UsersCard index={idx} userData={user} userList={userList} setUserList={setUserList} />
+                    </Col>
+                )
                 :
                 <LoadingSpinner />
             }
-        </div>
+        </Row>
     )
 }
 

@@ -34,7 +34,6 @@ const UsersCard = (props) => {
     return (
         <>
             <Card
-                style={{ width: 300, }}
                 className='user-card'
                 cover={
                     <img

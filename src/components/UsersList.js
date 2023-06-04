@@ -9,11 +9,15 @@ import { getUsers } from "../data";
 const UsersList = () => {
 
     const [userList, setUserList] = useState([]);
+    const [isLoading, setIsLoading] = useState(true);
 
     // fetch list of users
     useEffect(() => {
         getUsers()
-            .then(res => setUserList(res));
+            .then(res => {
+                setUserList(res);
+                setIsLoading(false);
+            });
     }, []);
 
     return (
@@ -25,7 +29,10 @@ const UsersList = () => {
                     </Col>
                 )
                 :
-                <LoadingSpinner />
+                isLoading ?
+                    <LoadingSpinner />
+                :
+                    <h4 style={{ margin: 24 }}>No user found!</h4>
             }
         </Row>
     )
